@@ -78,7 +78,7 @@ function ServiceDetailsForm() {
 
       await Promise.all(
         payloads.map(({ url, body }) =>
-          fetch(`https://www.golozap.com/api/users${url}`, {
+          fetch(`https://golozap.up.railway.app/api/users${url}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body),

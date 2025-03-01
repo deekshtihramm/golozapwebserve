@@ -111,7 +111,7 @@ export default function ServiceSelection() {
 
       try {
         const response = await fetch(
-          `https://www.golozap.com/api/users/getBypersonalEmail?personalEmail=${email}`
+          `https://golozap.up.railway.app/api/users/getBypersonalEmail?personalEmail=${email}`
         );
         const userData = await response.json();
 
@@ -150,7 +150,7 @@ export default function ServiceSelection() {
     }
 
     try {
-      const response = await fetch("https://www.golozap.com/api/update/serviceTypes", {
+      const response = await fetch("https://golozap.up.railway.app/api/update/serviceTypes", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
