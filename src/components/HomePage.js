@@ -31,6 +31,10 @@ const HomePage = () => {
   const handleViewAll = () => {
     navigate('/view-all', { state: { services: homeServices } });
   };
+  const handleServiceClick = (service) => {
+    const formattedService = encodeURIComponent(service.title);
+    navigate(`/service/${formattedService}`);
+  };
 
   return (
     <div className="home-container">
@@ -49,10 +53,15 @@ const HomePage = () => {
         <div className="scrollable-container">
           <div className="features-row">
             {displayedHomeServices.map((service) => (
+               <button
+               className="service-button2"
+               onClick={() => handleServiceClick(service)}
+             >
               <div key={service.id} className="feature-card">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>
+              </button>
             ))}
           </div>
         </div>
@@ -67,10 +76,15 @@ const HomePage = () => {
         <div className="scrollable-container">
           <div className="features-row">
             {displayedHomeServices.map((service) => (
+                   <button
+                   className="service-button2"
+                   onClick={() => handleServiceClick(service)}
+                 >
               <div key={service.id} className="feature-card">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>
+              </button>
             ))}
           </div>
         </div>
@@ -85,10 +99,15 @@ const HomePage = () => {
         <div className="scrollable-container">
           <div className="features-row">
             {displayedHomeServices.map((service) => (
+                   <button
+                   className="service-button2"
+                   onClick={() => handleServiceClick(service)}
+                 >
               <div key={service.id} className="feature-card">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>
+              </button>
             ))}
           </div>
         </div>

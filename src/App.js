@@ -21,6 +21,7 @@ const LoginLayout = lazy(() => import('./components/loginLayout1'));
 const ViewAllPage = lazy(() => import('./components/Viewallpage'));
 const Search = lazy(() => import('./businessuser/search'));
 const ServiceDetails = lazy(() => import('./components/servicedetails.js'));
+const Providerdetails = lazy(() => import('./components/providerdetails.js'));
 // Shared Routes
 const commonRoutes = [
   { path: "/", element: <HomePage /> },
@@ -30,6 +31,8 @@ const commonRoutes = [
   { path: "/view-all", element: <ViewAllPage /> },
   { path: "/search", element: <Search />},
   { path: "/service/:serviceName", element: <ServiceDetails />},
+  { path: "/p/:pName", element: <Providerdetails />},
+
 ];
 
 function App() {

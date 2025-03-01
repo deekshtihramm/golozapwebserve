@@ -1,12 +1,13 @@
 .home-container {
+  display: grid;
+  grid-template-columns: 83vw;
   font-family: 'Arial', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
-  max-width: 920px;
 }
 .features-section {
-  margin: 20px;
+  margin: 10px;
 }
 
 .section-header {
@@ -89,7 +90,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   flex: 0 0 auto; /* Prevent cards from stretching */
-  width: 200px; /* Fixed width for cards */
+  width: 190px; /* Fixed width for cards */
+  height: 60%;
 }
 
 .feature-card:hover {
@@ -106,4 +108,143 @@
   margin: 0;
   font-size: 16px;
   color: #666;
+}
+
+.service-button2{
+  background-color: #00000000;
+  border: #000000;
+}
+
+
+/* Media Queries */
+@media (max-width: 575.98px) {
+  .home-container{
+    grid-template-columns: 160vw;
+
+  }
+  .layout-header {
+      font-size: 14px;
+      width: 170%;
+  }
+
+  .side-nav {
+      width: 0;
+  }
+
+  .side-nav.open {
+      width: 180px;
+  }
+
+  main {
+      margin-left: 0;
+  }
+
+  .h1 {
+      font-size: 16px;
+  }
+
+  .nav-toggle {
+      display: block;  /* Show the toggle button */
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      z-index: 1112;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .home-container{
+    grid-template-columns: 98vw;
+
+  }
+  .layout-header {
+      font-size: 16px;
+      width: 140%;
+
+  }
+
+  .side-nav {
+      width: 200px;
+  }
+
+  .side-nav.open {
+      width: 220px;
+  }
+
+  main {
+      margin-left: 200px;
+  }
+
+  .h1 {
+      font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home-container{
+    grid-template-columns: 90vw;
+
+  }
+  .layout-header {
+      font-size: 18px;
+      width: 124%;
+  }
+
+  .side-nav {
+      width: 220px;
+  }
+
+  main {
+      margin-left: 220px;
+  }
+
+  .h1 {
+      font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home-container{
+    grid-template-columns: 73vw;
+
+  }
+  .layout-header {
+      font-size: 20px;
+  }
+
+  .side-nav {
+      width: 240px;
+  }
+
+  main {
+      margin-left: 240px;
+  }
+
+  .h1 {
+      font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-container{
+    grid-template-columns: 75vw;
+
+  }
+  .layout-header {
+      font-size: 22px;
+      width: 100%;
+
+  }
+
+  .side-nav {
+      width: 250px;
+  }
+
+  main {
+      margin-left: 250px;
+  }
+
+  .h1 {
+      font-size: 24px;
+  }
 }
