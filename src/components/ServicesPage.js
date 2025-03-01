@@ -12,7 +12,7 @@ function UserData() {
           throw new Error('No email found in localStorage');
         }
 
-        const response = await fetch('https://www.golozap.com/api/users/getBypersonalEmail', {
+        const response = await fetch('https://golozap.up.railway.app/api/users/getBypersonalEmail', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

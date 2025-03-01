@@ -24,7 +24,7 @@ const ServiceDetails = () => {
       console.log("API Request Data:", requestData);
       
       try {
-        const response = await axios.post("https://www.golozap.com/api/users/search-all", requestData);
+        const response = await axios.post("https://golozap.up.railway.app/api/users/search-all", requestData);
 
         console.log("API Response Status:", response.status);
         console.log("API Response Data:", response.data);
