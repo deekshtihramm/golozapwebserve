@@ -16,7 +16,7 @@ const LoginPage = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL || "http://"}/webuser/login`,
+        `${process.env.REACT_APP_API_URL || "https://"}/webuser/login`,
         { personalEmail, password }
       );
 
