@@ -22,6 +22,7 @@ const ViewAllPage = lazy(() => import('./components/Viewallpage'));
 const Search = lazy(() => import('./businessuser/search'));
 const ServiceDetails = lazy(() => import('./components/servicedetails.js'));
 const Providerdetails = lazy(() => import('./components/providerdetails.js'));
+const Sitemap = lazy(() => import('../public/sitemap.xml'));
 // Shared Routes
 const commonRoutes = [
   { path: "/", element: <HomePage /> },
@@ -32,6 +33,8 @@ const commonRoutes = [
   { path: "/search", element: <Search />},
   { path: "/service/:serviceName", element: <ServiceDetails />},
   { path: "/p/:pName", element: <Providerdetails />},
+  { path: "/sitemap.xml", element: <Sitemap />},
+
 
 ];
 
