@@ -37,7 +37,7 @@ const SignUpPage = () => {
       }); // Debug log
 
       // Call the API
-      const response = await axios.post('http://localhost:3000/api/webuser/users1', {
+      const response = await axios.post('http://www.golozap.com/api/webuser/users1', {
         servicename: formData.username,
         personalEmail: formData.email,
         password: formData.password,

@@ -78,7 +78,7 @@ function ServiceDetailsForm() {
 
       await Promise.all(
         payloads.map(({ url, body }) =>
-          fetch(`http://localhost:3000/api/users${url}`, {
+          fetch(`http://www.golozap.com/api/users${url}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(body),

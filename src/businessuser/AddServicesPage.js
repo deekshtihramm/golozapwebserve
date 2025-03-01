@@ -150,7 +150,7 @@ export default function ServiceSelection() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/update/serviceTypes", {
+      const response = await fetch("http://www.golozap.com/api/update/serviceTypes", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
