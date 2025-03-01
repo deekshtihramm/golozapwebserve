@@ -16,7 +16,7 @@ const LoginPage = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL || "http://localhost:3000/api"}/webuser/login`,
+        `${process.env.REACT_APP_API_URL || "www.golozap.com/api"}/webuser/login`,
         { personalEmail, password }
       );
 
