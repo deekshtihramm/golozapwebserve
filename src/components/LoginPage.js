@@ -16,9 +16,9 @@ const LoginPage = () => {
 
     try {
      const response = await axios.post(
-  `${process.env.REACT_APP_API_URL || "https://www.golozap.com"}/webuser/login`,
-  { personalEmail, password }
-);
+            `${process.env.REACT_APP_API_URL || "https://www.golozap.com"}/webuser/login`,
+            { personalEmail, password }
+      );
 
 
       // Save login state and email to localStorage
