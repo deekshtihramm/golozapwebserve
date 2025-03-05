@@ -1,0 +1,48 @@
+.logo {   
+  height: 5vh; /* Viewport height అనుసరించి */
+  margin-left: 2vw; /* Viewport width అనుసరించి */
+  max-height: 50px; /* Max limit */
+}  
+.div1{
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+.div2{
+  position: relative;
+}
+.parentdiv{
+  display: flex;
+}
+
+h1 {   
+  font-size: clamp(1rem, 2.5vw, 2rem); /* Responsive font size */
+}  
+
+.search-container {   
+  position: relative;   
+  padding: 1vh; 
+  width: 40vw; /* Prevent overflow */
+}  
+
+.search-input {   
+  padding: 0.5em 2em 0.5em 1em;   
+  width: min(90%, 600px); /* Restrict width */
+  border: 1px solid #ccc;   
+  border-radius: 20px;   
+  background-color: #fff;   
+  font-size: 1rem; /* Maintain readability */
+}  
+
+.search-icon {   
+  position: absolute;   
+  right: 1vw;   
+  top: 50%;   
+  transform: translateY(-50%);   
+  color: #888;   
+  border-radius: 0px 20px 20px 0px;   
+  height: 2vh;   
+  max-height: 20px; /* Prevents too small size */
+}

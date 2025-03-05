@@ -1,0 +1,120 @@
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .service-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0%
+  }
+  
+  .backbutton{
+    position: fixed;
+    margin-right: 70%;
+    margin-top: -2%;
+    text-decoration: none;
+  }
+  /* Search Bar */
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .service-card {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    border-color: #8ba8d6;
+    background-color: #f0f7ff;
+    transform: scale(1.05);
+  }
+  
+
+  .selected-service {
+    border-color: #1e40af;
+    background-color: #dbeafe;
+  }
+  
+  .selected-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e40af;
+  }
+  
+  .proceed-btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #1e40af;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .proceed-btn:hover {
+    background-color: #1e3a8a;
+    transform: scale(1.05);
+  }
+  
+  /* No Results Message */
+  .no-results {
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+
+  .inputproceed{
+    display: flex;
+    width: 650px;
+  }
+
+  .input{
+
+    width: 80%;
+  }
+  .proceed{
+    margin-left: 6%;
+  }
+
+  .proceed button{
+    height: 100%;
+    border: 2px solid rgb(167, 191, 255) ;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #6e9de9
+
+  }

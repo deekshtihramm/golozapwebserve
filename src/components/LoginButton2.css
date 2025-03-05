@@ -1,0 +1,16 @@
+/* LoginButton.css */
+.loginbutton {
+    background-color: rgb(73, 172, 64);
+    height: 30px;
+    margin: 5px;
+    padding-top: 0px;
+    padding: 0px 10px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    width: 30px;
+  }
+  
