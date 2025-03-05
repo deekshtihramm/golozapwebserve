@@ -20,7 +20,6 @@ const LoginPage = () => {
             { personalEmail, password }
       );
 
-
       // Save login state and email to localStorage
       localStorage.setItem("userEmail", personalEmail);
       localStorage.setItem("isLoggedIn", "true");
